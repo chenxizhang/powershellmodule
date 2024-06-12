@@ -9,15 +9,22 @@ on:
 
 jobs:
   publishmodule:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
-      - name: change the module name
-        shell: pwsh
-        run: Rename-Item -Path .\module.psd1 -NewName yourmodulename.psd1
-      - name: Publish PowerShell Module
-        uses: natescherer/publish-powershell-action@v1
+      - uses: dlemstra/code-sign-action@v1
         with:
-          token: ${{ secrets.NUGETKEY }}
-          target: gallery
-          path: module.psd1
+          certificate: '${{ secrets.CERTIFICATE }}'
+          password: '${{ secrets.CERTIFICATE_PASSWORD }}'
+          folder: .
+          recursive: true
+          files: |
+            *.ps1
+            *.psm1
+      - name: publish to powershell gallery
+        shell: pwsh
+        env:
+          nugetkey: ${{secrets.NUGETKEY}}
+        run: |
+          Rename-Item -Path .\module.psd1 -NewName netmaster.psd1
+          Publish-PSResource -ApiKey $env:nugetkey -Path netmaster.psd1 -Repository PSGallery

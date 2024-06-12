@@ -3,7 +3,7 @@
     RootModule           = '.\module.psm1'
 
     # Version number of this module.
-    ModuleVersion        = '0.0.0.1-preview'
+    ModuleVersion        = '0.0.1'
 
     # Supported PSEditions, change to Core if you just support PowerShell Core.
     CompatiblePSEditions = @("Desktop", "Core")
@@ -21,7 +21,7 @@
     Copyright            = '(c) code365.xyz. All rights reserved.'
 
     # Description of the functionality provided by this module
-    Description          = 'test module'
+    Description          = ''
 
     # Minimum version of the PowerShell engine required by this module, change to 7.x if you just support PowerShell Core.
     PowerShellVersion    = '5.1'
@@ -66,7 +66,7 @@
     CmdletsToExport      = @()
 
     # Variables to export from this module
-    VariablesToExport    = '*'
+    VariablesToExport    = @()
 
     # Aliases to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no aliases to export.
     AliasesToExport      = @()
@@ -100,7 +100,7 @@
             # ReleaseNotes of this module
             ReleaseNotes = "https://github.com/code365opensource/yourmodulename/blob/master/CHANGELOG.md"
             # Prerelease string of this module
-            # Prerelease = ''
+            Prerelease = 'preview'
 
             # Flag to indicate whether the module requires explicit user acceptance for install/update/save
             # RequireLicenseAcceptance = $false
