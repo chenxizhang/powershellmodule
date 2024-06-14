@@ -2,6 +2,7 @@
 
 > [!NOTE]
 > Replace `yourmodulename` with the name of the module, and delete this note. change the GUID in the psd1 file as well.
+> Follow the guidance (https://learn.microsoft.com/en-us/powershell/gallery/concepts/publishing-guidelines) to create a good module.
 
 ## Description
 

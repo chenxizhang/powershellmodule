@@ -43,6 +43,7 @@
 
     # Modules that must be imported into the global environment prior to importing this module
     # RequiredModules      = @(@{ ModuleName = 'MicrosoftTeams'; ModuleVersion = '2.0.0' }, @{ModuleName = 'AzureAD'; ModuleVersion = '2.0.2.130' })
+    RequiredModules      = @(@{ModuleName = "powershellextension"; RequiredVersion = "0.0.1"; Guid = "df717a00-1acf-45e8-a958-0c9bcb9af322" })
 
     # Assemblies that must be loaded prior to importing this module
     # RequiredAssemblies = @()
@@ -86,7 +87,7 @@
         PSData = @{
 
             # Tags applied to this module. These help with module discovery in online galleries.
-            Tags         = @("code365", "community", "china", "chenxizhang")
+            Tags         = @("code365", "community", "china", "chenxizhang", "PSEdition_Desktop", "PSEdition_Core", "Windows", "Linux", "MacOS")
 
             # A URL to the license for this module.
             LicenseUri   = 'https://github.com/code365opensource/yourmodulename/blob/master/LICENSE'
@@ -100,7 +101,7 @@
             # ReleaseNotes of this module
             ReleaseNotes = "https://github.com/code365opensource/yourmodulename/blob/master/CHANGELOG.md"
             # Prerelease string of this module
-            Prerelease = 'preview'
+            Prerelease   = 'preview'
 
             # Flag to indicate whether the module requires explicit user acceptance for install/update/save
             # RequireLicenseAcceptance = $false
