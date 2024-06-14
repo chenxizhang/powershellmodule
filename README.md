@@ -7,7 +7,7 @@
 ## Description
 
 
-[![PowerShell Gallery Version](https://img.shields.io/powershellgallery/v/yourmodulename?label=yourmodulename)](https://www.powershellgallery.com/packages/yourmodulename) [![PowerShell Gallery](https://img.shields.io/powershellgallery/dt/yourmodulename)](https://www.powershellgallery.com/packages/yourmodulename) [![](https://img.shields.io/badge/change-logs-blue)](CHANGELOG.md) 
+[![PowerShell Gallery Version](https://img.shields.io/powershellgallery/v/yourmodulename?label=yourmodulename)](https://www.powershellgallery.com/packages/yourmodulename) [![PowerShell Gallery](https://img.shields.io/powershellgallery/dt/yourmodulename)](https://www.powershellgallery.com/packages/yourmodulename) [![](https://img.shields.io/badge/change-logs-blue)](CHANGELOG.md) ![https://img.shields.io/powershellgallery/p/yourmodulename.svg](https://img.shields.io/powershellgallery/p/yourmodulename.svg)
 
 
 ## Install the module
