@@ -14,8 +14,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: dlemstra/code-sign-action@v1
         with:
-          certificate: '${{ secrets.CERTIFICATE }}'
-          password: '${{ secrets.CERTIFICATE_PASSWORD }}'
+          certificate: ${{ secrets.CERTIFICATE }}
+          password: ${{ secrets.CERTIFICATE_PASSWORD }}
           folder: .
           recursive: true
           files: |
